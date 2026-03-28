@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PlateSplit Support</title>
+  <meta name="description" content="Support information for PlateSplit.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f3ed;
+      --card: rgba(255, 255, 255, 0.88);
+      --text: #302923;
+      --muted: #6b625a;
+      --line: rgba(48, 41, 35, 0.12);
+      --accent: #2f80ed;
+      --shadow: 0 20px 50px rgba(48, 41, 35, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      line-height: 1.65;
+      background:
+        radial-gradient(circle at top left, rgba(47, 128, 237, 0.1), transparent 34%),
+        radial-gradient(circle at top right, rgba(255, 196, 87, 0.18), transparent 36%),
+        var(--bg);
+    }
+
+    .wrap {
+      width: min(880px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 38px 0 64px;
+    }
+
+    .nav {
+      margin-bottom: 28px;
+    }
+
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero,
+    .section {
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      background: var(--card);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero {
+      padding: 32px;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(36px, 7vw, 62px);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 38rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .section {
+      padding: 24px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.1;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .contact {
+      display: inline-flex;
+      margin-top: 12px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .footer-links {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: var(--text);
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.7);
+      font-weight: 600;
+    }
+
+    @media (max-width: 760px) {
+      .wrap {
+        width: min(100% - 20px, 880px);
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero,
+      .section {
+        border-radius: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="nav">
+      <a href="/platesplit.github.io/">← PlateSplit</a>
+    </nav>
+
+    <section class="hero">
+      <span class="eyebrow">Support</span>
+      <h1>Need help with PlateSplit?</h1>
+      <p class="subtitle">
+        For support, privacy questions, or issues with PlateSplit Pro, get in touch using the contact below.
+      </p>
+      <a class="contact" href="mailto:macaws-bile6o@icloud.com">macaws-bile6o@icloud.com</a>
+      <div class="footer-links">
+        <a href="/platesplit.github.io/privacy/">Privacy Policy</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="section">
+        <h2>Common help topics</h2>
+        <ul>
+          <li>Receipt scanning or camera permission issues</li>
+          <li>Importing a receipt from the photo library</li>
+          <li>Restoring PlateSplit Pro purchases</li>
+          <li>Questions about bill history or saved receipts</li>
+          <li>Ad or consent-related questions in the free version</li>
+        </ul>
+      </article>
+
+      <article class="section">
+        <h2>When you contact support</h2>
+        <ul>
+          <li>Include your device model and iOS version if possible</li>
+          <li>Describe what you were doing when the issue happened</li>
+          <li>Mention whether the issue is about the free app or PlateSplit Pro</li>
+          <li>Attach screenshots if they help explain the problem</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
